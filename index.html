@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantai Nipah - Jelajah Surga Tersembunyi</title>
+    <meta name="description" content="Landing page resmi eksplorasi wisata Pantai Nipah dengan informasi lengkap, galeri visual, dan aktivitas seru.">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="immersive-bg relative">
+
+    <!-- Atmospheric Background Elements -->
+    <div class="absolute top-[-100px] right-[-100px] w-[500px] h-[500px] rounded-full blur-[120px] opacity-20 pointer-events-none" style="background-color: #38bdf8"></div>
+    <div class="absolute bottom-[20%] left-[-100px] w-[600px] h-[400px] rounded-full blur-[100px] opacity-10 pointer-events-none" style="background-color: #facc15"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 w-full z-50 glass-card">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-6 h-6 rounded-full border-2 border-sky-400 flex items-center justify-center">
+                    <div class="w-2 h-2 bg-sky-400 rounded-full"></div>
+                </div>
+                <span class="text-xl font-display font-bold tracking-widest text-slate-50 uppercase">NIPAH.</span>
+            </div>
+
+            <div class="hidden md:flex gap-8">
+                <a href="#" class="text-xs font-medium uppercase tracking-tighter opacity-70 hover:opacity-100 transition-opacity">Beranda</a>
+                <a href="#about" class="text-xs font-medium uppercase tracking-tighter opacity-70 hover:opacity-100 transition-opacity">Tentang</a>
+                <a href="#activities" class="text-xs font-medium uppercase tracking-tighter opacity-70 hover:opacity-100 transition-opacity">Aktivitas</a>
+                <a href="#gallery" class="text-xs font-medium uppercase tracking-tighter opacity-70 hover:opacity-100 transition-opacity">Galeri</a>
+                <a href="#contact" class="text-xs font-medium uppercase tracking-tighter opacity-70 hover:opacity-100 transition-opacity">Kontak</a>
+            </div>
+
+            <button id="menu-btn" class="md:hidden text-slate-50">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden absolute top-20 left-0 w-full glass-card flex-col gap-4 p-8 md:hidden">
+            <a href="#" class="text-lg font-display font-medium border-b border-deep/5 pb-2">Beranda</a>
+            <a href="#about" class="text-lg font-display font-medium border-b border-deep/5 pb-2">Tentang</a>
+            <a href="#activities" class="text-lg font-display font-medium border-b border-deep/5 pb-2">Aktivitas</a>
+            <a href="#gallery" class="text-lg font-display font-medium border-b border-deep/5 pb-2">Galeri</a>
+            <a href="#contact" class="text-lg font-display font-medium border-b border-deep/5 pb-2">Kontak</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1544124499-58912cbddaad?auto=format&fit=crop&q=100&w=1920" 
+                 alt="Hero Pantai Nipah" 
+                 class="w-full h-full object-cover opacity-20">
+        </div>
+
+        <div class="relative z-10 text-center px-6 reveal">
+            <span class="inline-block px-4 py-1 rounded-full border border-sky-500/30 bg-sky-500/10 text-[10px] tracking-[0.3em] font-bold text-sky-400 mb-6 uppercase">
+                Surga Tersembunyi di Lombok
+            </span>
+            <h1 class="text-7xl md:text-[110px] leading-[0.9] font-black tracking-tighter mb-4 text-slate-50 uppercase">
+                PANTAI <br>
+                <span class="text-stroke text-slate-50 opacity-80">NIPAH</span>
+            </h1>
+            <p class="max-w-xl mx-auto text-slate-300 text-lg md:text-xl font-light leading-relaxed mb-12">
+                Nikmati ketenangan air laut toska dan pasir putih yang memukau, tempat di mana bukit bertemu samudra.
+            </p>
+            <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+                <button class="px-10 py-4 bg-sky-500 hover:bg-sky-400 text-slate-950 font-black text-xs tracking-[0.2em] rounded-full transition-all uppercase shadow-lg shadow-sky-500/20">
+                    Reservasi Sekarang
+                </button>
+                <button class="px-10 py-4 border border-white/20 hover:border-white/50 font-bold text-xs tracking-[0.2em] rounded-full uppercase transition-all">
+                    Tonton Video
+                </button>
+            </div>
+        </div>
+
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 text-sand/40">
+            <div class="scroll-indicator-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 px-6 max-w-7xl mx-auto relative z-10">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div class="space-y-8 reveal">
+                <h2 class="text-4xl md:text-6xl font-display font-bold leading-tight text-slate-50">
+                    Ketenangan yang <br>
+                    <span class="text-sky-400">Tak Terlupakan.</span>
+                </h2>
+                <p class="text-lg text-slate-300/70 leading-relaxed">
+                    Pantai Nipah bukan sekadar destinasi, ia adalah sebuah perasaan. Terletak di pesisir Lombok, 
+                    pantai ini menawarkan panorama laut yang tenang tanpa ombak besar, menjadikannya pilihan 
+                    terbaik untuk bersantai di bawah pohon kelapa yang rimbun.
+                </p>
+                <div class="flex items-center gap-4 text-sky-400 font-bold uppercase tracking-wider cursor-pointer hover:gap-6 transition-all">
+                    <span>Selengkapnya</span>
+                    <i data-lucide="chevron-right" class="w-5 h-5"></i>
+                </div>
+            </div>
+
+            <div class="relative reveal" style="transition-delay: 0.2s">
+                <div class="aspect-[4/5] rounded-3xl overflow-hidden glass-card shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1544124499-58912cbddaad?auto=format&fit=crop&q=80&w=1200" 
+                         alt="Pantai Nipah Detail" 
+                         class="w-full h-full object-cover opacity-80 hover:scale-110 transition-transform duration-700">
+                </div>
+                <div class="absolute -bottom-8 -left-8 glass-card p-8 rounded-2xl shadow-xl hidden md:block">
+                    <div class="flex items-center gap-4">
+                        <div class="p-3 bg-sky-500/20 rounded-full text-sky-400">
+                            <i data-lucide="map-pin"></i>
+                        </div>
+                        <div>
+                            <div class="text-[10px] uppercase tracking-widest text-slate-400 font-bold">Kordinat</div>
+                            <div class="font-mono text-sm text-slate-50">8.3980° S, 116.0381° E</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section id="activities" class="py-24 relative z-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-20 reveal">
+                <h2 class="text-4xl md:text-5xl font-display font-bold text-slate-50 mb-4">Pengalaman Imersif</h2>
+                <p class="text-slate-400 max-w-xl mx-auto">Beragam pengalaman menanti Anda di Pantai Nipah. Mulai dari petualangan bawah laut hingga santapan lezat.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Snorkeling -->
+                <div class="group p-10 rounded-3xl glass-card hover:bg-white/10 transition-all duration-500 reveal">
+                    <div class="mb-6 p-4 w-fit rounded-2xl bg-sky-500/20 text-sky-400 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                        <i data-lucide="waves" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-sm font-bold tracking-wider text-slate-50 mb-4 uppercase">SNORKELING</h3>
+                    <p class="text-xs text-slate-400 leading-normal">Jelajahi keindahan bawah laut dengan terumbu karang yang masih terjaga dan ikan tropis warna-warni.</p>
+                </div>
+                <!-- Fotografi -->
+                <div class="group p-10 rounded-3xl glass-card hover:bg-white/10 transition-all duration-500 reveal" style="transition-delay: 0.1s">
+                    <div class="mb-6 p-4 w-fit rounded-2xl bg-amber-500/20 text-amber-400 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                        <i data-lucide="camera" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-sm font-bold tracking-wider text-slate-50 mb-4 uppercase">FOTOGRAFI</h3>
+                    <p class="text-xs text-slate-400 leading-normal">Abadikan momen matahari terbenam yang memukau dan gradasi langit yang cantik di Pantai Nipah.</p>
+                </div>
+                <!-- Kuliner -->
+                <div class="group p-10 rounded-3xl glass-card hover:bg-white/10 transition-all duration-500 reveal" style="transition-delay: 0.2s">
+                    <div class="mb-6 p-4 w-fit rounded-2xl bg-teal-500/20 text-teal-400 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                        <i data-lucide="sun" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-sm font-bold tracking-wider text-slate-50 mb-4 uppercase">KULINER LOKAL</h3>
+                    <p class="text-xs text-slate-400 leading-normal">Nikmati hidangan laut segar khas pesisir Pantai Nipah seperti Ikan Bakar yang legendaris.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row items-end justify-between mb-12 gap-6 reveal">
+            <div class="space-y-4">
+                <h2 class="text-4xl md:text-6xl font-display font-bold text-slate-50">Galeri Visual.</h2>
+                <p class="text-slate-400 max-w-lg">Keindahan tertangkap kamera, namun pengalaman sesungguhnya tak tergantikan.</p>
+            </div>
+            <button class="px-8 py-3 rounded-full border border-white/20 font-bold uppercase tracking-widest text-xs text-slate-50 hover:bg-white/10 transition-all">
+                Lihat Semua Foto
+            </button>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="group relative aspect-[3/4] rounded-3xl overflow-hidden cursor-pointer glass-card reveal">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=800" alt="Gallery 1" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-70 group-hover:opacity-100">
+                <div class="absolute inset-0 bg-gradient-to-t from-deep/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+                    <span class="text-slate-50 font-bold text-lg tracking-tight">Pasir Putih</span>
+                </div>
+            </div>
+            <div class="group relative aspect-[3/4] rounded-3xl overflow-hidden cursor-pointer glass-card reveal" style="transition-delay: 0.1s">
+                <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&q=80&w=800" alt="Gallery 2" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-70 group-hover:opacity-100">
+                <div class="absolute inset-0 bg-gradient-to-t from-deep/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+                    <span class="text-slate-50 font-bold text-lg tracking-tight">Sunset Nipah</span>
+                </div>
+            </div>
+            <div class="group relative aspect-[3/4] rounded-3xl overflow-hidden cursor-pointer glass-card reveal" style="transition-delay: 0.2s">
+                <img src="https://images.unsplash.com/photo-1544124499-58912cbddaad?auto=format&fit=crop&q=80&w=800" alt="Gallery 3" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-70 group-hover:opacity-100">
+                <div class="absolute inset-0 bg-gradient-to-t from-deep/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+                    <span class="text-slate-50 font-bold text-lg tracking-tight">Air Jernih</span>
+                </div>
+            </div>
+            <div class="group relative aspect-[3/4] rounded-3xl overflow-hidden cursor-pointer glass-card reveal" style="transition-delay: 0.3s">
+                <img src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&q=80&w=800" alt="Gallery 4" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-70 group-hover:opacity-100">
+                <div class="absolute inset-0 bg-gradient-to-t from-deep/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+                    <span class="text-slate-50 font-bold text-lg tracking-tight">Relaksasi</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 px-6 relative z-10">
+        <div class="max-w-5xl mx-auto glass-card rounded-[3rem] p-12 md:p-20 text-center text-slate-50 relative overflow-hidden reveal">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-sky-500/10 rounded-full blur-3xl -mr-32 -mt-32"></div>
+            <div class="absolute bottom-0 left-0 w-64 h-64 bg-amber-500/10 rounded-full blur-3xl -ml-32 -mb-32"></div>
+            
+            <div class="relative z-10 space-y-8">
+                <h2 class="text-4xl md:text-8xl font-black leading-none tracking-tighter">
+                    SIAP UNTUK <br> <span class="text-stroke">PETUALANGAN?</span>
+                </h2>
+                <p class="max-w-xl mx-auto text-slate-300 text-lg font-light leading-relaxed">
+                    Jadwalkan kunjungan Anda dan rasakan sendiri kemurnian alam Pantai Nipah. 
+                    Kami menantikan kehadiran Anda di sini.
+                </p>
+                <button class="px-12 py-5 bg-sky-500 hover:bg-sky-400 text-slate-950 font-black text-xs tracking-[0.2em] rounded-full transition-all inline-block hover:scale-105 active:scale-95 uppercase shadow-2xl shadow-sky-500/20">
+                    Hubungi Kami Sekarang
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="relative z-10 border-t border-white/5 pt-24 pb-12 px-6 overflow-hidden">
+        <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
+        
+        <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 mb-20">
+            <div class="md:col-span-1 space-y-6">
+                <div class="flex items-center gap-3">
+                    <div class="w-6 h-6 rounded-full border-2 border-sky-400 flex items-center justify-center">
+                        <div class="w-2 h-2 bg-sky-400 rounded-full"></div>
+                    </div>
+                    <span class="text-xl font-display font-bold tracking-widest text-slate-50 uppercase">NIPAH.</span>
+                </div>
+                <p class="text-slate-400 text-sm leading-relaxed">Destinasi wisata unggulan di Lombok Barat yang menawarkan ketenangan dan keindahan alam yang asri.</p>
+                <div class="flex gap-4">
+                    <a href="#" class="p-2 border border-white/10 rounded-full hover:bg-white/10 transition-all text-slate-300"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+                    <a href="#" class="p-2 border border-white/10 rounded-full hover:bg-white/10 transition-all text-slate-300"><i data-lucide="facebook" class="w-4 h-4"></i></a>
+                    <a href="#" class="p-2 border border-white/10 rounded-full hover:bg-white/10 transition-all text-slate-300"><i data-lucide="twitter" class="w-4 h-4"></i></a>
+                </div>
+            </div>
+
+            <div class="space-y-6">
+                <h4 class="font-bold uppercase tracking-[0.2em] text-[10px] text-slate-500">Navigasi</h4>
+                <ul class="space-y-4 text-xs font-medium tracking-tighter text-slate-400">
+                    <li><a href="#" class="hover:text-slate-100 transition-colors uppercase">Beranda</a></li>
+                    <li><a href="#about" class="hover:text-slate-100 transition-colors uppercase">Tentang</a></li>
+                    <li><a href="#activities" class="hover:text-slate-100 transition-colors uppercase">Aktivitas</a></li>
+                    <li><a href="#gallery" class="hover:text-slate-100 transition-colors uppercase">Galeri</a></li>
+                </ul>
+            </div>
+
+            <div class="space-y-6 md:col-span-2">
+                <h4 class="font-bold uppercase tracking-[0.2em] text-[10px] text-slate-500">Berlangganan Newsletter</h4>
+                <p class="text-slate-400 text-xs">Dapatkan info promo dan update terbaru langsung di email Anda.</p>
+                <div class="flex gap-2">
+                    <input type="email" placeholder="Alamat Email Anda" class="backdrop-blur-md bg-white/5 border border-white/10 px-6 py-4 rounded-full flex-1 focus:outline-none focus:border-white/30 text-xs text-slate-300 transition-all">
+                    <button class="bg-sky-500 text-slate-950 px-8 py-4 rounded-full font-black uppercase tracking-widest text-[10px] hover:bg-sky-400 transition-all uppercase">Kirim</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-end gap-6">
+            <div class="flex flex-col gap-1">
+                <span class="text-[10px] text-slate-500 font-bold tracking-widest uppercase">Coordinates</span>
+                <span class="text-xs font-mono text-slate-300">8.3980° S, 116.0381° E</span>
+            </div>
+            
+            <div class="flex items-center gap-8">
+                <div class="flex flex-col items-end gap-1">
+                    <span class="text-[10px] text-slate-500 font-bold tracking-widest uppercase">Avg. Temp</span>
+                    <span class="text-xs font-mono text-slate-300">29°C</span>
+                </div>
+                <div class="flex flex-col items-end gap-1">
+                    <span class="text-[10px] text-slate-500 font-bold tracking-widest uppercase">Weather</span>
+                    <span class="text-xs font-mono text-slate-300 uppercase">Sunny</span>
+                </div>
+            </div>
+
+            <p class="text-[10px] text-slate-600 font-medium tracking-tight">© 2026 NIPAH EXPLORE. ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
+
+    <!-- Script File -->
+    <script src="script.js"></script>
+</body>
+</html>
